@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Panel from '../../Panel';
+import Panel from '../../Panel'
 
-import { Container, HashtagIcon } from './styles';
+import { Container, HashtagIcon } from './styles'
 
-const tags = ['rocketseat', 'next-level', 'node', 'react', 'developer'];
+const tags = ['geekcode', 'microservices', 'node', 'react', 'developer']
 
 const HashtagPanel: React.FC = () => {
   return (
@@ -13,14 +13,14 @@ const HashtagPanel: React.FC = () => {
         <span className="title">Hashtags seguidas</span>
 
         {tags.map((item) => (
-          <span className="tag">
+          <span key={item} className="tag">
             <HashtagIcon />
             {item}
           </span>
         ))}
       </Panel>
     </Container>
-  );
-};
+  )
+}
 
-export default HashtagPanel;
+export default HashtagPanel

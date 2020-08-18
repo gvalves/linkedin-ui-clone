@@ -1,11 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   margin-top: 8px;
-
-  @media (min-width: 1180px) {
-    margin-top: 16px;
-  }
 
   > div {
     padding: 15px 40px 50px 12px;
@@ -19,6 +15,7 @@ export const Container = styled.div`
         border-radius: 50%;
         flex-shrink: 0;
       }
+
       .column {
         display: flex;
         flex-direction: column;
@@ -29,16 +26,18 @@ export const Container = styled.div`
         .row-skeleton {
           height: 12px;
 
-          &:nth-child(1) {
+          :nth-child(1) {
             width: 30%;
           }
-          &:nth-child(2) {
+
+          :nth-child(2) {
+            width: 50%;
             margin-top: 10px;
-            width: 55%;
           }
         }
       }
     }
+
     span {
       display: flex;
       flex-direction: column;
@@ -47,14 +46,19 @@ export const Container = styled.div`
       .row-skeleton {
         height: 12px;
 
-        &:nth-child(1) {
+        :nth-child(1) {
           width: 100%;
         }
-        &:nth-child(2) {
-          margin-top: 10px;
+
+        :nth-child(2) {
           width: 90%;
+          margin-top: 10px;
         }
       }
     }
   }
-`;
+
+  @media (min-width: 1180px) {
+    margin-top: 16px;
+  }
+`

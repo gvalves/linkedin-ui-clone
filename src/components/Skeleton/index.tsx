@@ -1,21 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components'
+
+const shimmer = keyframes`
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -135% 0%;
+  }
+`
 
 export default styled.div`
-  display: inline-block;
-  background: linear-gradient(-90deg, #e7edf1 0%, #f8f8f8 50%, #e7edf1 100%);
-  background-size: 400% 400%;
-  animation: pulse 1.2s ease-in-out infinite;
+  background-image: linear-gradient(
+    -90deg,
+    #e7edf1 0%,
+    #f8f8f8 50%,
+    #e7edf1 100%
+  );
 
-  @keyframes pulse {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: -135% 0%;
-    }
-  }
+  background-size: 400% 400%;
+  animation: ${shimmer} 1.2s ease-in-out infinite;
 
   &.white {
     background-image: linear-gradient(-90deg, #fff 0%, #e7edf1 50%, #fff 100%);
   }
-`;
+`

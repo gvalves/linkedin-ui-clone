@@ -1,21 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import Panel from '../../Panel';
+import Panel from '../../Panel'
 
-import { Container } from './styles';
+import image from '../../../assets/shiro.jpg'
+
+import { Container } from './styles'
 
 const ProfilePanel: React.FC = () => {
   return (
     <Panel>
       <Container>
         <div className="profile-cover"></div>
-        <img
-          src="https://github.com/guilhermerodz.png"
-          alt="Avatar"
-          className="profile-picture"
-        />
-        <h1>Guilherme Rodz</h1>
-        <h2>Software Engineer @ Rocketseat</h2>
+        <img src={image} alt="Avatar" className="profile-picture" />
+        <h1>Shiro NGNL</h1>
+        <h2>NGNL Character @ Geekcode</h2>
 
         <div className="separator"></div>
 
@@ -29,7 +27,7 @@ const ProfilePanel: React.FC = () => {
         </div>
       </Container>
     </Panel>
-  );
-};
+  )
+}
 
-export default ProfilePanel;
+export default ProfilePanel

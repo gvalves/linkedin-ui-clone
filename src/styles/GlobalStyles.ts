@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -29,4 +29,4 @@ export default createGlobalStyle`
     --color-separator: rgba(0,0,0,0.15);
     --color-white: #fff;
   }
-`;
+`

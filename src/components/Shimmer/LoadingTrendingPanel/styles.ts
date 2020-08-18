@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  .row + .row {
+  > .row + .row {
     margin-top: 23px;
   }
-  .row {
+
+  > .row {
     display: flex;
     align-items: center;
 
@@ -12,6 +13,7 @@ export const Container = styled.div`
       width: 48px;
       height: 48px;
       border-radius: 2px;
+      flex-shrink: 0;
     }
 
     .column {
@@ -26,11 +28,12 @@ export const Container = styled.div`
         &:nth-child(1) {
           width: 50%;
         }
+
         &:nth-child(2) {
-          margin-top: 10px;
           width: 100%;
+          margin-top: 10px;
         }
       }
     }
   }
-`;
+`

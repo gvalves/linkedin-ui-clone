@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { FaHashtag } from 'react-icons/fa';
+import styled from 'styled-components'
+import { FaHashtag } from 'react-icons/fa'
 
 export const Container = styled.div`
   position: sticky;
@@ -24,11 +24,11 @@ export const Container = styled.div`
       padding: 3.5px 0;
     }
   }
-`;
+`
 
 export const HashtagIcon = styled(FaHashtag)`
   width: 16px;
   height: 16px;
   color: var(--color-hashtag);
   margin-right: 8px;
-`;
+`

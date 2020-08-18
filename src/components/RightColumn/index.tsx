@@ -1,15 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import LoadingTrendingPanel from '../Shimmer/LoadingTrendingPanel';
-import TrendingPanel from './TrendingPanel';
+import TrendingPanel from './TrendingPanel'
 
-import { Container } from './styles';
+import { LoadingTrandingPanel } from '../Shimmer/LoadingTrendingPanel'
+
+import { Container } from './styles'
+import { LoadingProps } from '../../types'
 
 const RightColumn: React.FC<LoadingProps> = ({ isLoading }) => {
   return (
     <Container className="right-column">
       {isLoading ? (
-        <LoadingTrendingPanel />
+        <>
+          <LoadingTrandingPanel />
+        </>
       ) : (
         <>
           <TrendingPanel />
@@ -17,7 +21,7 @@ const RightColumn: React.FC<LoadingProps> = ({ isLoading }) => {
         </>
       )}
     </Container>
-  );
-};
+  )
+}
 
-export default RightColumn;
+export default RightColumn

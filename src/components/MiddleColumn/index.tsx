@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import LoadingFeedShare from '../Shimmer/LoadingFeedShare';
-import LoadingFeedPost from '../Shimmer/LoadingFeedPost';
-import FeedShare from './FeedShare';
-import FeedPost from './FeedPost';
+import FeedShare from './FeedShare'
+import FeedPost from './FeedPost'
 
-import { Container } from './styles';
+import { LoadingFeedShare } from '../Shimmer/LoadingFeedShare'
+import { LoadingFeedPost } from '../Shimmer/LoadingFeedPost'
+
+import { Container } from './styles'
+import { LoadingProps } from '../../types'
 
 const MiddleColumn: React.FC<LoadingProps> = ({ isLoading }) => {
   return (
@@ -28,7 +30,7 @@ const MiddleColumn: React.FC<LoadingProps> = ({ isLoading }) => {
         </>
       )}
     </Container>
-  );
-};
+  )
+}
 
-export default MiddleColumn;
+export default MiddleColumn

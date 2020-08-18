@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components';
-import { AiOutlineLike } from 'react-icons/ai';
+import styled, { css } from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
 import {
   RiMessage2Line,
   RiShareForwardLine,
   RiSendPlaneLine,
-} from 'react-icons/ri';
+} from 'react-icons/ri'
 
 export const Container = styled.div`
   margin-top: 8px;
@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media (min-width: 1180px) {
     margin-top: 16px;
   }
-`;
+`
 
 export const Row = styled.div`
   display: flex;
@@ -94,45 +94,45 @@ export const Row = styled.div`
       }
     }
   }
-`;
+`
 
 export const PostImage = styled.img`
   width: 100%;
-`;
+`
 
 export const Separator = styled.div`
   width: 100%;
   height: 1px;
   border-top: 1px solid var(--color-separator);
-`;
+`
 
 export const Avatar = styled.img`
   width: 48px;
   height: 48px;
   border-radius: 50%;
   margin-right: 8px;
-`;
+`
 
-export const Column = styled.div``;
+export const Column = styled.div``
 
 const iconCSS = css`
   width: 24px;
   height: 24px;
   margin-right: 4px;
-`;
+`
 
 export const LikeIcon = styled(AiOutlineLike)`
   ${iconCSS}
-`;
+`
 
 export const CommentIcon = styled(RiMessage2Line)`
   ${iconCSS}
-`;
+`
 
 export const ShareIcon = styled(RiShareForwardLine)`
   ${iconCSS}
-`;
+`
 
 export const SendIcon = styled(RiSendPlaneLine)`
   ${iconCSS}
-`;
+`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   > div {
@@ -8,6 +8,7 @@ export const Container = styled.div`
 
       filter: brightness(96%);
     }
+
     span {
       display: flex;
       flex-direction: column;
@@ -25,14 +26,15 @@ export const Container = styled.div`
       .row-skeleton {
         height: 12px;
 
-        &:nth-child(2) {
+        :nth-child(2) {
           width: 60%;
         }
-        &:nth-child(3) {
+
+        :nth-child(3) {
           width: 50%;
           margin-top: 10px;
         }
       }
     }
   }
-`;
+`

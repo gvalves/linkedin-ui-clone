@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import LoadingProfilePanel from '../Shimmer/LoadingProfilePanel';
-import ProfilePanel from './ProfilePanel';
-import HashtagPanel from './HashtagPanel';
+import ProfilePanel from './ProfilePanel'
+import HashtagPanel from './HashtagPanel'
 
-import { Container } from './styles';
+import { LoadingProfilePanel } from '../Shimmer/LoadingProfilePanel'
+
+import { Container } from './styles'
+import { LoadingProps } from '../../types'
 
 const LeftColumn: React.FC<LoadingProps> = ({ isLoading }) => {
   return (
@@ -18,7 +20,7 @@ const LeftColumn: React.FC<LoadingProps> = ({ isLoading }) => {
         </>
       )}
     </Container>
-  );
-};
+  )
+}
 
-export default LeftColumn;
+export default LeftColumn

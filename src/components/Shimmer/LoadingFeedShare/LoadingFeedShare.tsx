@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import Panel from '../../Panel';
-import Skeleton from '../../Skeleton';
+import Panel from '../../Panel'
+import Skeleton from '../../Skeleton'
 
-import { Container } from './styles';
+import { Container } from './styles'
 
 const LoadingFeedShare: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const LoadingFeedShare: React.FC = () => {
         <Skeleton className="row-skeleton" />
       </Panel>
     </Container>
-  );
-};
+  )
+}
 
-export default LoadingFeedShare;
+export default LoadingFeedShare

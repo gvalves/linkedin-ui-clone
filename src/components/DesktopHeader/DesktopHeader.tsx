@@ -1,23 +1,25 @@
-import React from 'react';
+import React from 'react'
+
+import image from '../../assets/shiro.jpg'
 
 import {
   Container,
   Wrapper,
-  LinkedInIcon,
+  LinkdinIcon,
   SearchInput,
   HomeIcon,
   NotificationsIcon,
   ProfileCircle,
   CaretDownIcon,
-} from './styles';
+} from './styles'
 
-const Header: React.FC = () => {
+const DesktopHeader: React.FC = () => {
   return (
     <Container>
       <Wrapper>
         <div className="left">
-          <LinkedInIcon />
-          <SearchInput placeholder="Pesquisar" />
+          <LinkdinIcon />
+          <SearchInput />
         </div>
 
         <div className="right">
@@ -26,12 +28,14 @@ const Header: React.FC = () => {
               <HomeIcon />
               <span>Início</span>
             </button>
+
             <button>
               <NotificationsIcon />
               <span>Notificações</span>
             </button>
+
             <button>
-              <ProfileCircle src="https://github.com/guilhermerodz.png" />
+              <ProfileCircle src={image} />
               <span>
                 Eu <CaretDownIcon />
               </span>
@@ -40,7 +44,7 @@ const Header: React.FC = () => {
         </div>
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default DesktopHeader

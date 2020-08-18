@@ -1,3 +1,3 @@
-interface LoadingProps {
-  isLoading: boolean;
+export interface LoadingProps {
+  isLoading: boolean
 }

@@ -1,9 +1,9 @@
-import { Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0'
 
-import AdBanner from '../components/AdBanner';
+import AdBanner from '../components/AdBanner'
 
 export default {
   title: 'LinkedIn/AdBanner',
-} as Meta;
+} as Meta
 
-export { AdBanner };
+export { AdBanner }

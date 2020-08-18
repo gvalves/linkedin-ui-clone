@@ -1,11 +1,10 @@
-import React from 'react';
+import React from 'react'
+import Skeleton from '../../Skeleton'
 
-import Skeleton from '../../Skeleton';
-
-import { Container } from './styles';
+import { Container } from './styles'
 
 const LoadingTrendingPanel: React.FC = () => {
-  const Row = () => (
+  const Row: React.FC = () => (
     <div className="row">
       <Skeleton className="square-skeleton white" />
 
@@ -14,7 +13,7 @@ const LoadingTrendingPanel: React.FC = () => {
         <Skeleton className="row-skeleton white" />
       </div>
     </div>
-  );
+  )
 
   return (
     <Container>
@@ -22,7 +21,7 @@ const LoadingTrendingPanel: React.FC = () => {
       <Row />
       <Row />
     </Container>
-  );
-};
+  )
+}
 
-export default LoadingTrendingPanel;
+export default LoadingTrendingPanel
